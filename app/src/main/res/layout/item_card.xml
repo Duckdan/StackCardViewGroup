@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--   android:layout_marginLeft="45dp"-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0f0"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@animator/item_animator"
+    app:cardCornerRadius="8dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    tools:targetApi="lollipop">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@color/colorPrimary"
+            app:riv_corner_radius="8dp" />
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_shape"
+            android:gravity="center" />
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
+
